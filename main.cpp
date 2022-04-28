@@ -19,7 +19,6 @@ void inverso(int a, int n)
     int x, y;
     int eucli = EuclidesExtendido(a, n, x, y);
     if (eucli == 1){
-      cout<<x<<endl;
       int resultado = (x % n + n) % n;
       cout << "inverso es:  " << resultado;
     }
