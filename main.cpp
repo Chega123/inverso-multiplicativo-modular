@@ -13,14 +13,6 @@ int EuclidesExtendido(int a, int b, int &x, int &y) {
     y = x1 - (a / b) * y1;
     return euclides;
 }
-int euclides(int a,int b){
-  while(b!=0){
-    int aux=b;
-    b=a%b;
-    a=aux;
-  }
-  return a;
-}
 
 void inverso(int a, int n)
 {
