@@ -19,8 +19,11 @@ void inverso(int a, int n)
     int x, y;
     int eucli = EuclidesExtendido(a, n, x, y);
     if (eucli == 1){
-      int resultado = (x % n + n) % n;
-      cout << "inverso es:  " << resultado;
+      if(0<=x<=n-1){
+        int resultado = (x % n + n) % n;
+        cout << "inverso es:  " << resultado;
+      }
+       else cout << "no esta en el rango de Zn";  
     }
     else cout << "no existe";  
 }
@@ -38,4 +41,5 @@ int main()
     
    return 0;
 }
+
 
